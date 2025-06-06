@@ -1,4 +1,4 @@
-# Rock-Paper-Scissors-Lizard-Spock_GAME
+
 # Rock, Paper, Scissors, Lizard, Spock Game
 
 ## Description
@@ -6,6 +6,15 @@
 This is an interactive game based on the popular expanded variant of the classic "Rock, Paper, Scissors" game. It includes two additional options: Lizard and Spock, adding more strategy and fun.
 
 The user plays against the computer, and the game displays the winner based on specific rules, along with an explanation of the winning rule after each round.
+
+## Screenshot
+
+### Main Game Interface
+![Main Game](images/Intro_screenshot.png)
+
+### Gameplay in Action
+![Gameplay](images/GAME_screenshot.png)
+
 
 
 ## How to Play
@@ -47,6 +56,17 @@ The user plays against the computer, and the game displays the winner based on s
 - `script.js` – Game logic, result handling, and event management.
 - `images/` – Folder with images for each option and game state.
 - `audio/play.mp3` – Optional background music.
+
+## Testing
+
+HTML Validation  The index.html file was tested using the W3C HTML Validator.
+No major errors or warnings. All tags are properly closed and semantic structure is used.
+
+CSS Validation The style.css file was tested with the W3C CSS Validator (Jigsaw).
+No errors. CSS passes with proper syntax and best practices.
+
+JavaScript Linting JavaScript (script.js) was checked using JSHint.
+Code passed with no significant issues. Functions are logically structured and readable.
 
 
 ## Customization and Future Improvements
