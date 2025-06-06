@@ -13,7 +13,7 @@ The user plays against the computer, and the game displays the winner based on s
 ![Main Game](images/Intro_screenshot.png)
 
 ### Gameplay in Action
-![Gameplay](images/GAME_screenshot.png)
+![Gameplay](images/GAME_screenshot.jpg)
 
 
 
@@ -59,6 +59,18 @@ The user plays against the computer, and the game displays the winner based on s
 
 ## Testing
 
+### HTML Validation
+![Main Game](images/Intro_screenshot.png)
+
+### CSS Validation
+![Gameplay](images/css_testing.png)
+
+### Javascript Testing
+![Gameplay](images/jshint.png.jpg)
+
+### Lighthouse Testing
+![Main Game](images/lighthouse_testing.png)
+
 HTML Validation  The index.html file was tested using the W3C HTML Validator.
 No major errors or warnings. All tags are properly closed and semantic structure is used.
 
@@ -67,6 +79,19 @@ No errors. CSS passes with proper syntax and best practices.
 
 JavaScript Linting JavaScript (script.js) was checked using JSHint.
 Code passed with no significant issues. Functions are logically structured and readable.
+
+Lighthouse Scores:
+
+Category	Score
+Performance	92
+Accessibility	95
+Best Practices	93
+SEO	94
+PWA	91
+
+The game passed Lighthouse testing with excellent scores (90+ in all areas) and confirmed working functionality. It’s responsive, accessible, and ready to deploy.
+
+
 
 
 ## Customization and Future Improvements
