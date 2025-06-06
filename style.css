@@ -119,7 +119,7 @@ body {
 }
 
 /* Specific colors for options */
-.option-image.rock p {
+option-image.rock p {
   color: #f9faf6; /* Dark olive green */
 }
 
