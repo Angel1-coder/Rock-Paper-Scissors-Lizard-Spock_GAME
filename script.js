@@ -92,7 +92,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     TL: "YOU",
                     TS: "CPU",
                     LR: "CPU",
-                    LP: "CPU",
+                    LP: "YOU",
                     LT: "CPU",
                     LL: "DRAW",
                     LS: "YOU",
