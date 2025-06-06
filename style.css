@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Press Start 2P', cursive;
+}
+
+body {
+  background-image: url('images/castle-torche.jpg'); /* Adjust path to image */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #D8C07B; /* Gold beige for text */
+  font-family: 'Press Start 2P', cursive;
+  align-items: center;
+  justify-content: center;
+}
+
+::selection {
+  color: #fff;
+  background: #000;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #4A5433; /* Dark olive green */
+  border: 4px solid #E00800; /* Strong red */
+  box-shadow: 8px 8px 0 #D8C07B; /* Gold beige */
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.good-luck {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #de0d64;
+  margin-bottom: 1rem;
+}
+
+.result-field {
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+.result-images {
+  display: flex;
+  justify-content: center;
+  gap: 7rem;
+  margin-bottom: 1rem;
+}
+
+.user-result img {
+  /*transform: rotate(90deg); */
+  width: 100px;
+}
+
+.cpu-result img {
+  /*transform: rotate(-90deg) rotateY(180deg);*/
+  width: 100px;
+}
+
+.result {
+  font-size: 2rem;
+  color: #de0d64;
+  margin-top: 1.5rem;
+}
+
+#back-to-menu {
+  background-color: #EF4423; /* Strong red */
+  color: #F6EB14; /* Bright yellow */
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 8px;
+  box-shadow: 4px 4px 0 #2A3492;
+  transition: all 0.2s ease-in-out;
+}
+
+#back-to-menu:hover {
+  background-color: #FF9526; /* Orange */
+  box-shadow: 2px 2px 0 #2A3492;
+}
+
+.option-images {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2.5rem;
+}
+
+.option-image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  opacity: 0.5;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.option-image:hover,
+.option-image.active {
+  opacity: 1;
+}
+
+.option-image img {
+  width: 50px;
+  pointer-events: none;
+}
+
+.option-image p {
+  margin-top: 1rem;
+  font-size: 1rem;
+  pointer-events: none;
+}
+
+/* Specific colors for options */
+.option-image.rock p {
+  color: #f9faf6; /* Dark olive green */
+}
+
+.option-image.paper p {
+  color: #D8C07B; /* Gold beige */
+}
+
+.option-image.scissors p {
+  color: #E00800; /* Strong red */
+}
+
+.option-image.lizard p {
+  color: #D8C07B; /* Gold beige */
+}
+
+.option-image.spock p {
+  color: #4A5433; /* Dark olive green */
+}
+
+#rules-box {
+  position: fixed;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  width: 250px;
+  padding: 15px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 2px solid #333;
+  border-radius: 10px;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  z-index: 1000;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center; /* Centers image horizontally */
+  align-items: center;     /* Centers image vertically */
+  height: 100vh;           /* Sets container height to full viewport height */
+}
+
+.image-container img {
+  max-width: 100%;         /* Prevents image from exceeding container width */
+  height: auto;            /* Maintains image aspect ratio */
+}
+
+.container-center {
+  display: flex;
+  justify-content: center;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 1rem; /* Space between h1 and image */
+  margin-bottom: 2rem; /* Space below */
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+    transform: translateY(40px); /* Slides in from below */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Apply only to images with this class */
+.animated-img {
+  opacity: 0; /* Initially hidden */
+  animation: appear 1s ease-out forwards;
+  animation-delay: 0.5s; /* Wait a bit before starting */
+}
+
+.winner-display {
+  text-align: center;
+  margin-top: 20px;
+  height: 200px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.winner-display img {
+  max-height: 100%;
+  max-width: 100%;
+  transform: scale(0);
+  transition: transform 0.5s ease-in-out;
+}
+
+.winner-display img.show {
+  transform: scale(1.2);
+  animation: zoomIn 0.5s ease forwards;
+}
+
+@keyframes zoomIn {
+  from {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+}
+
+.animated-video {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 10px;
+  animation: appear 1s ease-out forwards;
+  margin-bottom: 1.5rem;
+}
+
+#sound-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 10px 15px;
+  font-family: 'Press Start 2P', cursive;
+  background-color: #000;
+  color: #fff;
+  border: 2px solid #fff;
+  cursor: pointer;
+  z-index: 1000;
+  font-size: 12px;
+  transition: background-color 0.3s;
+}
+
+#sound-toggle:hover {
+  background-color: #444;
+}

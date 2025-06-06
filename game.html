@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rock, Paper, Scissors, Lizard, Spock Game</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet" />
+</head>
+<body>
+  
+  <!-- Sound toggle button positioned top right -->
+  <button id="sound-toggle">🔊 Activate Sound</button>
+
+  <!-- Hidden audio element -->
+  <audio id="background-music" loop>
+    <source src="audio/play.mp3" type="audio/mp3" />
+    Your browser does not support the audio element.
+  </audio>
+
+  <section class="container">
+    <div class="good-luck">¡¡ GOOD LUCK !!</div>
+
+    <div class="result-field">
+      <div class="winner-display">
+        <img id="winner-image" src="" alt="" />
+      </div>
+      <div class="result-images">
+        <span class="user-result">
+          <img src="images/Rock.png" alt="Rock hand gesture">
+        </span>
+        <span class="cpu-result">
+          <img src="images/Rock.png" alt="Rock hand gesture">
+        </span>
+      </div>
+      <div class="result">¡¡START GAME!!</div>
+      <div id="rule-explanation" class="rule-explanation"></div>
+    </div>
+
+    <div class="option-images">
+      <span class="option-image rock">
+        <img src="images/Rock.png" alt="Rock hand gesture">
+        <p>Rock</p>
+      </span>
+      <span class="option-image paper">
+        <img src="images/Paper.png" alt="Paper hand gesture">
+        <p>Paper</p>
+      </span>
+      <span class="option-image scissors">
+        <img src="images/Scissors.png" alt="Scissors hand gesture">
+        <p>Scissors</p>    
+      </span>
+      <span class="option-image lizard">
+        <img src="images/Lizard.png" alt="Lizard hand gesture">
+        <p>Lizard</p>  
+      </span>
+      <span class="option-image spock">
+        <img src="images/Spock.png" alt="Spock hand gesture">
+        <p>Spock</p>  
+      </span>
+    </div>
+  </section>
+
+  <div class="container-center">  
+    <br>
+    <button id="back-to-menu" onclick="window.location.href='index.html';">Back to Menu</button>
+  </div>
+
+  <div id="rules-box"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
