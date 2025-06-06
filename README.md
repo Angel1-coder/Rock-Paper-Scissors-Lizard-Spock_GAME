@@ -60,13 +60,13 @@ The user plays against the computer, and the game displays the winner based on s
 ## Testing
 
 ### HTML Validation
-![Main Game](images/Intro_screenshot.png)
+![Main Game](images/html_testing.png.png)
 
 ### CSS Validation
 ![Gameplay](images/css_testing.png)
 
 ### Javascript Testing
-![Gameplay](images/jshint.png.jpg)
+![Gameplay](images/jshint.png)
 
 ### Lighthouse Testing
 ![Main Game](images/lighthouse_testing.png)
