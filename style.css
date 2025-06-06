@@ -128,7 +128,7 @@ body {
 }
 
 .option-image.scissors p {
-  color: #E00800; /* Strong red */
+  color: #D8C07B; /* Gold beige */
 }
 
 .option-image.lizard p {
@@ -136,7 +136,7 @@ body {
 }
 
 .option-image.spock p {
-  color: #4A5433; /* Dark olive green */
+  color: #D8C07B; /* Gold beige */
 }
 
 #rules-box {
