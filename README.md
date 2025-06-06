@@ -60,7 +60,7 @@ The user plays against the computer, and the game displays the winner based on s
 ## Testing
 
 ### HTML Validation
-![Main Game](images/html_testing.png.png)
+![Main Game](images/html_testing.png)
 
 ### CSS Validation
 ![Gameplay](images/css_testing.png)
