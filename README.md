@@ -102,6 +102,19 @@ The game passed Lighthouse testing with excellent scores (90+ in all areas) and 
 - Options to pause/resume music or adjust volume.
 - Support for multiple languages in rules and messages.
 
+## Credits & Inspiration
+
+Visual Inspiration
+The visual concept of this project was inspired by a T-shirt design featured on the following    website:
+Rock-Paper-Scissors-Lizard-Spock T-Shirt – ChasingTheFrog
+Using AI tools, the image was adapted into a themed video to enhance the game's visual appeal.
+
+## Music
+
+The background music used in the game is "Synth Arcade" by TeknoAXE.
+It is available under a Creative Commons license and was sourced from the following YouTube video:
+
+[Music](https://www.youtube.com/watch?v=qx7avPhISBo&t=15s)
 
 ## Author
 
