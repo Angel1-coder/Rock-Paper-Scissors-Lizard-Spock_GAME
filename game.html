@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Rock, Paper, Scissors, Lizard, Spock Game</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="assets/css/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -14,24 +14,35 @@
 
   <!-- Hidden audio element -->
   <audio id="background-music" loop>
-    <source src="audio/play.mp3" type="audio/mp3">
+    <source src="assets/audio/play.mp3" type="audio/mp3">
     Your browser does not support the audio element.
   </audio>
 
   <section class="container">
     <h2 class="good-luck">¡¡ GOOD LUCK !!</h2>
 
+    <div class="score-display">
+      <div class="score-item">
+        <span class="score-label">Du:</span>
+        <span id="user-score">0</span>
+      </div>
+      <div class="score-item">
+        <span class="score-label">Computer:</span>
+        <span id="cpu-score">0</span>
+      </div>
+    </div>
+
     <div class="result-field">
       <div class="winner-display">
         <!-- Add fallback image to prevent validation error -->
-        <img id="winner-image" src="images/Rock.png" alt="Winner image">
+        <img id="winner-image" src="assets/images/Rock.png" alt="Winner image">
       </div>
       <div class="result-images">
         <span class="user-result">
-          <img src="images/Rock.png" alt="Rock hand gesture">
+          <img src="assets/images/Rock.png" alt="Rock hand gesture">
         </span>
         <span class="cpu-result">
-          <img src="images/Rock.png" alt="Rock hand gesture">
+          <img src="assets/images/Rock.png" alt="Rock hand gesture">
         </span>
       </div>
       <div class="result">¡¡START GAME!!</div>
@@ -40,23 +51,23 @@
 
     <div class="option-images">
       <div class="option-image rock">
-        <img src="images/Rock.png" alt="Rock hand gesture">
+        <img src="assets/images/Rock.png" alt="Rock hand gesture">
         <p>Rock</p>
       </div>
       <div class="option-image paper">
-        <img src="images/Paper.png" alt="Paper hand gesture">
+        <img src="assets/images/Paper.png" alt="Paper hand gesture">
         <p>Paper</p>
       </div>
       <div class="option-image scissors">
-        <img src="images/Scissors.png" alt="Scissors hand gesture">
+        <img src="assets/images/Scissors.png" alt="Scissors hand gesture">
         <p>Scissors</p>    
       </div>
       <div class="option-image lizard">
-        <img src="images/Lizard.png" alt="Lizard hand gesture">
+        <img src="assets/images/Lizard.png" alt="Lizard hand gesture">
         <p>Lizard</p>  
       </div>
       <div class="option-image spock">
-        <img src="images/Spock.png" alt="Spock hand gesture">
+        <img src="assets/images/Spock.png" alt="Spock hand gesture">
         <p>Spock</p>  
       </div>
     </div>
@@ -69,6 +80,6 @@
 
   <div id="rules-box"></div>
 
-  <script src="script.js"></script>
+  <script src="assets/js/script.js"></script>
 </body>
 </html>
