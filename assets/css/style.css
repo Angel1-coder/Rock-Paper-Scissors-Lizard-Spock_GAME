@@ -7,6 +7,11 @@
   font-family: 'Press Start 2P', cursive;
 }
 
+/* Ensure all elements respect container boundaries */
+* {
+  max-width: 100%;
+}
+
 body {
   background-image: url('../images/castle-torche.jpg'); /* Background castle image */
   background-size: cover;
@@ -16,6 +21,8 @@ body {
   font-family: 'Press Start 2P', cursive;
   align-items: center;
   justify-content: center;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+  min-height: 100vh;
 }
 
 ::selection {
@@ -24,7 +31,8 @@ body {
 }
 
 .container {
-  max-width: 800px;
+  max-width: calc(90vw - 8px); /* Account for border and shadow */
+  width: 100%;
   margin: 0 auto;
   background-color: #4A5433; /* Dark olive green */
   border: 4px solid #E00800; /* Strong red */
@@ -32,6 +40,7 @@ body {
   padding: 20px;
   border-radius: 10px;
   text-align: center;
+  box-sizing: border-box; /* Ensure padding and border are included in width */
 }
 
 .good-luck {
@@ -77,7 +86,7 @@ body {
 .result-images {
   display: flex;
   justify-content: center;
-  gap: 7rem;
+  gap: 2rem; /* Reduced gap for better mobile/tablet compatibility */
   margin-bottom: 1rem;
 }
 
@@ -121,6 +130,50 @@ body {
   margin-top: 2.5rem;
   flex-wrap: wrap;
   gap: 10px;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* Tablet Portrait (768px - 1024px) */
+@media (max-width: 1024px) and (orientation: portrait) {
+  .container {
+    max-width: calc(95vw - 8px);
+    padding: 15px;
+    margin: 10px auto;
+  }
+  
+  .result-images {
+    gap: 1.5rem;
+  }
+  
+  .user-result img,
+  .cpu-result img {
+    width: 80px;
+  }
+  
+  .result {
+    font-size: 1.5rem;
+  }
+  
+  .option-images {
+    justify-content: center;
+    gap: 15px;
+    margin-top: 1.5rem;
+  }
+  
+  .option-image {
+    flex: 0 0 calc(50% - 10px);
+    max-width: calc(50% - 10px);
+  }
+  
+  .option-image img {
+    width: 45px;
+  }
+  
+  .option-image p {
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+  }
 }
 
 @media (max-width: 768px) {
@@ -142,6 +195,41 @@ body {
   .option-image p {
     font-size: 0.8rem;
     margin-top: 0.5rem;
+  }
+}
+
+/* Small tablets and large phones */
+@media (max-width: 600px) {
+  .container {
+    max-width: calc(98vw - 8px);
+    padding: 10px;
+    margin: 5px auto;
+  }
+  
+  .result-images {
+    gap: 0.5rem;
+  }
+  
+  .user-result img,
+  .cpu-result img {
+    width: 60px;
+  }
+  
+  .result {
+    font-size: 1rem;
+  }
+  
+  .option-images {
+    gap: 10px;
+    margin-top: 1rem;
+  }
+  
+  .option-image img {
+    width: 35px;
+  }
+  
+  .option-image p {
+    font-size: 0.7rem;
   }
 }
 
@@ -175,6 +263,8 @@ body {
 
 .option-image img {
   width: 50px;
+  max-width: 100%;
+  height: auto;
   pointer-events: none;
 }
 
@@ -240,19 +330,20 @@ option-image.rock p {
   .container {
     margin: 10px;
     padding: 15px;
+    max-width: calc(95vw - 8px);
   }
   
   .result-images {
-    gap: 2rem;
+    gap: 1rem;
   }
   
   .user-result img,
   .cpu-result img {
-    width: 80px;
+    width: 70px;
   }
   
   .result {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
 }
 
@@ -341,7 +432,8 @@ option-image.rock p {
 
 .animated-video {
   width: 100%;
-  max-width: 500px;
+  max-width: 90vw; /* Responsive video width */
+  height: auto;
   border-radius: 10px;
   animation: appear 1s ease-out forwards;
   margin-bottom: 1.5rem;
@@ -360,6 +452,7 @@ option-image.rock p {
   z-index: 1000;
   font-size: 12px;
   transition: background-color 0.3s;
+  max-width: calc(100vw - 40px); /* Prevent overflow */
 }
 
 #sound-toggle:hover {
