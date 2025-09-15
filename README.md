@@ -10,10 +10,10 @@ The user plays against the computer, and the game displays the winner based on s
 ## Screenshot
 
 ### Main Game Interface
-![Main Game](assets/images/Intro_screenshot.png)
+![Main Game](assets/images/Game_Interface_2025.png)
 
 ### Gameplay in Action
-![Gameplay](assets/images/GAME_screenshot.jpg)
+![Gameplay](assets/images/Game_in_Action_2025.png)
 
 
 
